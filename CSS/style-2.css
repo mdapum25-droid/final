@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navi{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+    z-index: 1000;
+    border-radius: 10px;
+}
+.navi P{
+    font-size: 15px;
+}
+.logo{
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+    margin: 5px 5px 5px 5px;
+    border-radius: 50%;
+
+}
+.list{
+    display: flex;
+    width: 500px;
+    justify-content: space-around;
+}
+.list li a{
+    text-decoration: none;
+    color: wheat;
+}
+.list li{
+    list-style-type: none;
+    padding: 6px 10px;
+    border-radius: 10px;
+    background-color: rgb(20, 46, 66);
+    transition: .5s linear;
+}
+.list li:hover{
+    color: rgb(120, 158, 192);
+    background-color: red;
+}
+.search{
+    border-radius: 10px;
+    position: relative;
+    width: 300px;
+    text-align: end;
+    margin-right: 20px;
+    
+}
+.search input{
+    border-radius: 20px;
+    border-color: rgb(15, 26, 54);
+    padding: 8px;
+    width: 100%;
+}
+.search button{
+    padding: 8px;
+    position: absolute;
+    right: 0px;
+    border-radius: 0px 20px 20px 0px;
+    border-color: none;
+}
+.Singup{
+    width: 260px;
+    text-align: end;
+    
+}
+.Singup button:hover{
+    color: rgb(120, 158, 192);
+    background-color: red;
+}
+.Singup button{
+    font-size: 20px;
+    padding: 4px 5px;
+    border-radius: 13px;
+    background-color: rgb(20, 46, 66);
+    color: wheat;
+    transition: .5s linear;
+}
+.top-img img{
+    padding: 10px;
+    width: 100%;
+    max-width: 1300px;
+    height: auto;
+    max-height: 250px;
+    display: block;
+    margin: auto;
+}
+.top-img1 img{
+    padding: 10px;
+    width: 100%;
+    max-width: 1300px;
+    height: 100px;
+    display: block;
+    margin: auto;
+}
+/* Main Content */
+.heading{
+    color: red;
+    text-align: center;
+    margin: 10px 0px;
+
+}
+.heading span{
+    border: 2px solid rgb(148, 148, 196);
+    padding: 10px;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.main-1{
+    width: 45%;
+    max-width: 430px;
+    height: 215px;
+    border: 1px solid wheat;
+    border-radius: 10px;
+    background-color: wheat;
+    overflow: hidden;
+    margin: 10px 0px;
+
+}
+.main img{
+    width: 45%;
+    max-width: 230px;
+    height: 210px;
+    margin: 5px 30px 0px 5px;
+    transition: 0.5s linear;
+    display: block;
+    margin: auto 5px auto 5px;
+    border-radius: 10px;
+    
+}
+.main img:hover{
+    transform: scale(1.1);
+
+}
+
+.main-1{
+    display: flex;
+    align-items: center;
+}
+.main-1 div{
+    width: 50%;
+    max-width: 215px;
+}
+.main-1 h4{
+    font-size: 30px;
+    margin-bottom: 0;
+    text-align: left;
+    margin-left: 15px;
+}
+.main-1 p{
+    color: rgba(124, 124, 6, 0.808);
+    margin: 0px 0px 30px 0px;
+    font-size: 20px;
+    text-align: llef;
+    margin-left: 15px;
+}
+.main-1 button{
+    font-size: 14px;
+    /* background-color: #b88bf3e5; */
+    width: 90px;
+    height: 30px;
+    border-radius: 9px;
+    transition: .5s linear;
+    margin: 0px auto;
+    align-items: center;
+    background: linear-gradient(120deg, #f6d365, #fda085);
+
+
+    
+}
+.main-1 button:hover{
+    color: rgb(219, 29, 29);
+    background-color: rgb(57, 151, 2);
+}
+.b1{
+    background-color: antiquewhite;
+    margin-top: 20px;
+}
+.main-1 .b1{
+    background-color: rgb(198, 233, 233);
+    width: 110px;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+@media screen and (max-width:768px){
+
+    .navi{
+        flex-direction: column;
+    }
+
+    .list{
+        width:100%;
+        flex-direction:column;
+        align-items:center;
+        gap:10px;
+    }
+
+    .search{
+        width:95%;
+        margin:10px 0;
+    }
+
+    .search input{
+        width:100%;
+    }
+
+    .Singup{
+        width:100%;
+        text-align:center;
+        margin:10px 0;
+    }
+
+    .main-1{
+        flex-direction:column;
+        width:95%;
+        height:auto;
+        padding:10px;
+    }
+
+    .main img{
+        width:100%;
+        max-width:250px;
+        margin:0 auto 10px;
+    }
+
+    .main-1 h4{
+        font-size:24px;
+    }
+
+    .main-1 p{
+        font-size:18px;
+    }
+
+    .main-1 button{
+        width:100%;
+        margin-top:10px;
+    }
+}
+
